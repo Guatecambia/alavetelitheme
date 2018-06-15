@@ -99,7 +99,7 @@ a {
   &:hover,
   &:active,
   &:focus {
-    color: darken($link-color, 10%);
+    color: darken($link-color, 15%);
   }
 }
 
@@ -281,7 +281,7 @@ a.link_button_green_large {
   border-bottom: none;
   a {
     @extend %menu-item;
-    color: transparentize($color_white, 0.2);
+    color: #2F017D;
     @media( min-width: $main_menu-mobile_menu_cutoff ) {
       padding: 0.875em 1em;
     }
@@ -566,7 +566,7 @@ a.link_button_green_large {
 
 /* Footer */
 #footer {
-  background-color: $color_neutral_dark;
+  background-color: #3A3A3A;
   color: darken($color_neutral_light, 10%);
   a {
     text-decoration: none;
@@ -874,7 +874,7 @@ dt {
 
 .homepage-hero {
   background-color: $color_neutral_dark;
-  background-image: image-url('homepage-background-small.jpg');
+  background-image: image-url('banner-publitopia.gif');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -883,7 +883,7 @@ dt {
   position: relative;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     padding: 5em 0 8em;
-    background-image: image-url('homepage-background.jpg');
+    background-image: image-url('banner-publitopia.gif');
   }
 
   a {
@@ -933,4 +933,42 @@ dt {
 // User menu
 .pro-pill {
   background-color: desaturate(darken($color_secondary, 10%), 5%);
+}
+
+#wrapper{
+    padding-top:75px;
+    padding-bottom:100px;
+}
+
+.banner_site-title {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+//other customizations
+.hiw-content__headings h2 {
+    color:#FF3F30;
+}
+p.hiw__subtitle {
+    color:#32007E;
+}
+
+.steps__step-box p{
+    color:#32007E;
+}
+
+.frontpage_examples h3{
+    color:#FF3F30;
+}
+
+.footer__final .row {
+    border-top: none;
+}
+
+.request-listing__request-body a:hover{
+    color: darken($link-color, 15%);
+}
+
+h1, h2 {
+    color: #FF3F30;
 }
