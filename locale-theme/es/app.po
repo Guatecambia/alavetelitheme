@@ -1,0 +1,3 @@
+msgid "Want to make a request?"
+msgstr "¿Quieres hacer una solicitud?"
+

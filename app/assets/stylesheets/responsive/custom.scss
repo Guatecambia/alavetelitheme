@@ -28,12 +28,13 @@
 /* Selected menu item */
 %selected-menu-item {
   font-weight: bold;
-  color: $color_primary;
-  background-color: $color_neutral_light;
+  color: $color_white;
+  background-color: darken($color_primary, 15%);
   &:hover,
   &:active,
   &:focus {
-    background-color: $color_neutral_light;
+    background-color: darken($color_primary, 15%);
+    color: $color_white;
   }
 }
 
@@ -215,6 +216,7 @@ input.use-datepicker[type=text] {
 form input[type=submit], a.link_button_green, a.link_button_green_large {
   @include button-primary;
   text-decoration: none;
+  background-color: #62517D !important;
 }
 
 a.link_button_green_large {
@@ -901,13 +903,13 @@ dt {
   }
 
   .new-request__content {
-    background-color: $color_neutral_dark;
+    /*background-color: $color_neutral_dark;*/
     border-radius: 5px;
     padding: 1.888888889em;
   }
 
   .new-request__title {
-    color: $color_white;
+    color: #f61806;
     font-size: 1.4375em;
     margin: 0 0 0.5em;
   }
