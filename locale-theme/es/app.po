@@ -1,3 +1,231 @@
 msgid "Want to make a request?"
 msgstr "¿Quieres hacer una solicitud?"
 
+msgid "About {{count}} FOI requests found"
+msgstr "Hay {{count}} solicitudes de acceso a la Información Pública"
+
+msgid "Actions"
+msgstr "Opciones"
+
+msgid "Annotation contains defamatory material"
+msgstr "El comentario es difamatorio"
+
+msgid "Annotation contains personal information"
+msgstr "El comentario tiene información personal"
+
+msgid "Browse all authorities &rarr;"
+msgstr "Ver todas las Munis &rarr;"
+
+msgid "By law, you should get a response promptly, and normally before the end of <strong>{{date_response_required_by}}</strong>."
+msgstr "Por ley deberías de tener una respuesta, normalmente no más tarde de <strong>{{date_response_required_by}}</strong>."
+
+msgid "Click on the link below to send a message to {{public_body_name}} telling them to reply to your request. You might like to ask for an internal review, asking them to find out why response to the request has been so slow."
+msgstr "Presiona el link debajo para enviar un mensaje a {{public_body_name}} diciendoles que respondan tu solicitud. Podrías pedir un proceso de revisión o preguntar por qué se han tardado tanto."
+
+msgid "FOI requests {{start_count}} to {{end_count}} of about {{total_count}}"
+msgstr "Solicitudes de Acceso. De la {{start_count}} a la {{end_count}} de {{total_count}}"
+
+msgid "Got a {{site_name}} account?"
+msgstr "¿Tienes cuenta en {{site_name}}?"
+
+msgid "If this is incorrect, or you would like to send a late response to the request or an email on another subject to {{user}}, then please email {{contact_email}} to ask us to reopen the request. You can then resend the response."
+msgstr "Si esto es incorrecto, o si quieres enviar otra respuesta, entonces envía un correo a {{contact_email}} indicandonos que quieres reabrir la solicitud, después de reabierta puedes enviar más respuestas."
+
+msgid "If you got the email <strong>more than two months ago</strong>, then this login link won't work any more. Please try doing what you were doing from the beginning."
+msgstr "Si recibiste este correo hace <strong>mas de dos meses</strong>, este enlace ya no funcionará. Por favor intenta hacer lo que hiciste para recibirlo de nuevo."
+
+msgid "In progress"
+msgstr "En progreso"
+
+msgid "Last edit editor can't be blank"
+msgstr "La última edición no puede estar vacía."
+
+msgid "Last edit editor can't be longer than 255 characters"
+msgstr "La última edición no puede ser mas grande de 255 caractéres"
+
+msgid "Needs status update"
+msgstr "Necesita actualización de estado"
+
+msgid "Notification"
+msgstr "Notificación"
+
+msgid "Notification|Expired"
+msgstr "Notificación|Expiró"
+
+msgid "Notification|Send after"
+msgstr "Notificación|Enviado después"
+
+msgid "Please note that in some cases publication of requests and responses will be delayed."
+msgstr "Toma en cuenta que en algunos casos la publicación de solicitudes y respuestas no es inmediata."
+
+msgid "Please read the recent response and <strong>update the status</strong> so we know whether it contains useful information."
+msgid_plural "Please read the recent responses and <strong>update the status</strong> so we know whether they contain useful information."
+msgstr[0] "Por favor revisa la respuesta y <strong>actualiza el estado</strong> para saber si tiene información útil."
+msgstr[1] "Por favor revisa las respuestas y <strong>actualiza el estado</strong> para saber si tienen información útil."
+
+msgid "Please update the status of your request"
+msgstr "Por favor actualiza el estado de tu solicitud."
+
+msgid "Report annotation"
+msgstr "Reportar comentario"
+
+msgid "Report annotation on request: {{title}}"
+msgstr "Reportar comentario en la solicitud: {{title}}"
+
+msgid "Request email can't be nil"
+msgstr "El correo de la solicitud no puede estar en blanco"
+
+msgid "Requires admin attention"
+msgstr "Requiere atención del administrador"
+
+msgid "Role"
+msgstr "Rol"
+
+msgid "Role|Name"
+msgstr "Rol|Nombre"
+
+msgid "Role|Resource type"
+msgstr "Rol|tipo de recurso"
+
+msgid "Send and publish message"
+msgstr "Envía y publica tu mensaje"
+
+msgid "Send and publish request"
+msgstr "Envía y publica tu solicitud"
+
+msgid "Show all attachments"
+msgstr "Mostrar todos los adjuntos"
+
+msgid "Show fewer attachments"
+msgstr "Mostrar menos adjuntos"
+
+msgid "Sorry, '{{authority_name}}' has been marked as defunct, which means we can no longer process requests to them. You may need to check whether their responsibilities have been taken over by a different authority."
+msgstr "Lo sentimos, '{{authority_name}}' ya no existe, lo que significa que ya no procesará solicitudes de información. Verifica que entidad tomó sus responsabilidades para hacer una nueva solicitud."
+
+msgid "Sorry, we're currently unable to add your annotation. Please try again later."
+msgstr "Lo sentimos, en este momento no se puede agregar tu comentario.  Por favor intenta de nuevo mas tarde."
+
+msgid "Sorry, we're currently unable to send your request. Please try again later."
+msgstr "Lo sentimos, en este momento no podemos enviar tu solicitud. Por favor intenta de nuevo mas tarde."
+
+msgid "Summary is too short. Please be a little more descriptive about the information you are asking for."
+msgstr "El resumen es muy corto, por favor se más descriptivo en la información que estas solicitando."
+
+msgid "The email that you, on behalf of {{public_body}}, sent to {{user}} <{{incoming_email}}> to reply to an {{law_used_short}} request has not been delivered."
+msgstr "El correo que enviaste en nombre de {{public_body}} a {{user}} <{{incoming_email}}> respondiendo una solicitud de acceso a la Información Pública ha sido entregado."
+
+msgid "The following request has been made public on {{site_name}}."
+msgstr "La solicitud de información es pública en {{site_name}}"
+
+msgid "The following request will be made public on {{site_name}} in the next week. If you do not wish this request to go public at that time, please click on the link below to keep it private for longer."
+msgstr "Si no deseas que la siguiente solicitud sea pública en {{site_name}} la próxima semana, presiona el siguiente enlace para mantenerla privada por mas tiempo."
+
+msgid "Then your FOI request to {{public_body_name}} will be sent and published."
+msgstr "Entonces tu solicitud a {{public_body_name}} será enviada y publicada."
+
+msgid "They have still not replied to your {{law_used_short}} request {{title}}, as required by law"
+msgstr "No han contestado a tu solicitud {{title}}, segun lo requerido por la ley"
+
+msgid "This annotation has been reported for administrator attention"
+msgstr "Este commentario ha sido reportado al administrador"
+
+msgid "This person's Freedom of Information request"
+msgid_plural "This person's Freedom of Information requests (approximately {{count}})"
+msgstr[0] "Solicitud de Información de esta persona"
+msgstr[1] "Solicitudes de Información (aproximadamente {{count}}) de esta persona"
+
+msgid "This request has been made public on {{site_name}}."
+msgstr "Esta solicitud es pública en {{site_name}}"
+
+msgid "To send and publish your FOI request"
+msgstr "Para enviar y publicar tu solicitud"
+
+msgid "We couldn't determine the delivery status of this message. It can take up to 24 hours after the message has been sent to determine delivery status information."
+msgstr "No se pudo determinar el estado de entrega del mensaje. Puede tomar hasta 24 horas después de enviar el mensaje para determinar su estado de entrega."
+
+msgid "We don't know the delivery status for this message."
+msgstr "No sabemos el estado de entrega de este mensaje."
+
+msgid "What's happened:"
+msgstr "Qué pasó:"
+
+msgid "You can see the request and remind the body to respond with the following link:"
+msgid_plural "You can see the requests and remind the bodies to respond with the following links:"
+msgstr[0] "Puedes ver las solicitudes y recordarle a la entidad que conteste en el siguiente link:"
+msgstr[1] "Puedes ver las solicitudes y recordarle a la entidad que conteste en el siguiente link:"
+
+msgid "You can see the request and tell the body to respond with the following link. You might like to ask for an internal review, asking them to find out why their response to the request has been so slow."
+msgid_plural "You can see the requests and tell the bodies to respond with the following links. You might like to ask for internal reviews, asking the bodies to find out why responses to the requests have been so slow."
+msgstr[0] "Puedes ver las solicitudes y recordarle a la entidad que conteste en el siguiente link. Podrías preguntar por qué estan tardando tanto y pedir una revisión interna."
+msgstr[1] "Puedes ver las solicitudes y recordarle a la entidad que conteste en el siguiente link. Podrías preguntar por qué estan tardando tanto y pedir una revisión interna."
+
+msgid "You can see the response with the following link:"
+msgid_plural "You can see the responses with the following links:"
+msgstr[0] "Puedes ver la respuesta en el siguiente enlace:"
+msgstr[1] "Puedes ver las respuestas en el siguiente enlace:"
+
+msgid "You have a new response to the {{law_used_full}} request"
+msgstr "Tienes una nueva respuesta a tu solicitud de Acceso a la Información Pública"
+
+msgid "You have a new response to the {{law_used_full}} request '{{request_title}}' that you made to {{public_body_name}}."
+msgstr "Tienes una nueva respuesta a tu solicitud de Acceso a la Información Pública que hiciste a {{public_body_name}}."
+
+msgid "You might find some useful information in the notes we hold about '{{authority_name}}':"
+msgstr "Podrías encontrar información útil en las notas que tenemos sobre '{{authority_name}}':"
+
+msgid "Your FOI request - {{request_title}} has been made public on {{site_name}}"
+msgstr "Tu solicitud '{{request_title}}' es pública en {{site_name}}"
+
+msgid "Your FOI request - {{request_title}} will be made public on {{site_name}} this week"
+msgstr "Tu solicitud '{{request_title}} será pública en {{site_name}} esta semana"
+
+msgid "Your Freedom of Information request"
+msgid_plural "Your Freedom of Information requests (approximately {{count}})"
+msgstr[0] "Tu solicitud de Información Pública"
+msgstr[1] "Tus solicitudes de Información Pública ({{count}} aproximadamente)"
+
+msgid "failed"
+msgstr "falló"
+
+msgid "sent"
+msgstr "enviado"
+
+msgid "unknown"
+msgstr "desconocido"
+
+msgid "{{count}} request had a new response:"
+msgid_plural "{{count}} requests had new responses:"
+msgstr[0] "{{count}} solicitud tiene una nueva respuesta:"
+msgstr[1] "{{count}} solicitudes tienen nuevas respuestas:"
+
+msgid "{{count}} request has been made public on {{site_name}}."
+msgid_plural "{{count}} requests have been made public on {{site_name}}."
+msgstr[0] "{{count}} solicitud es ahora pública en {{site_name}}."
+msgstr[1] "{{count}} solicitudes son ahora públicas en {{site_name}}."
+
+msgid "{{count}} request has not had a prompt response:"
+msgid_plural "{{count}} requests have not had prompt responses:"
+msgstr[0] "{{count}} solicitud no ha tenido respuesta:"
+msgstr[1] "{{count}} solicitudes no han tenido respuestas:"
+
+msgid "{{count}} request has still not had a response:"
+msgid_plural "{{count}} requests have still not had responses:"
+msgstr[0] "{{count}} solicitud todavía no tiene respuesta:"
+msgstr[1] "{{count}} solicitudes todavía no tienen respuesta:"
+
+msgid "{{public_body_name}} have not replied to your {{law_used_short}} request {{title}} promptly, as normally required by law. Click on the link below to remind them to reply."
+msgstr "{{public_body_name}} no ha contestado a tu solicitud '{{title}}' en el tiempo que lo estipula la ley. Presiona el enlace para recordarles que contesten."
+
+msgid "{{public_body_name}} have still not replied to your {{law_used_short}} request {{title}}, as required by law. Click on the link below to tell them to reply. You might like to ask for an internal review, asking them to find out why their response to the request has been so slow."
+msgstr "{{public_body_name}} no ha contestado a tu solicitud '{{title}}' en el tiempo que lo estipula la ley. Presiona el enlace para recordarles que contesten. Podrías pedir un proceso de revisión o preguntar por qué se han tardado tanto."
+
+msgid "{{site_name}} covers requests to {{number_of_authorities}} authority, including:"
+msgid_plural "{{site_name}} covers requests to {{number_of_authorities}} authorities, including:"
+msgstr[0] "{{site_name}} te permite hacer solicitudes a {{number_of_authorities}} municipalidades, incluyendo: "
+msgstr[1] "{{site_name}} te permite hacer solicitudes a {{number_of_authorities}} municipalidades, incluyendo: "
+
+msgid "{{site_name}} users have made {{number_of_requests}} request, including:"
+msgid_plural "{{site_name}} users have made {{number_of_requests}} requests, including:"
+msgstr[0] "Los ciudadanos de {{site_name}} han hecho {{number_of_requests}} solicitudes, incluyendo:"
+msgstr[1] "Los ciudadanos de {{site_name}} han hecho {{number_of_requests}} solicitudes, incluyendo:"
+
