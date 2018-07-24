@@ -289,3 +289,12 @@ msgstr "API"
 msgid "Advanced search"
 msgstr "Búsqueda avanzada"
 
+msgid "Please update the status of your request"
+msgstr "Actualiza el estado de tu solicitud"
+
+msgid "To let everyone know, follow this link and then select the appropriate box."
+msgstr "Para que todo el mundo lo sepa, sigue este enlace y elige la opción adecuada."
+
+msgid "Your request was called {{info_request}}. Letting everyone know whether you got the information will help us keep tabs on"
+msgstr "Tu solicitud se llamaba {{info_request}}. Actualizar el estado nos sirve a todos para saber si se esta cumpliendo con la ley"
+
