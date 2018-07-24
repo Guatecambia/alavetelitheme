@@ -229,3 +229,63 @@ msgid_plural "{{site_name}} users have made {{number_of_requests}} requests, inc
 msgstr[0] "Los ciudadanos de {{site_name}} han hecho {{number_of_requests}} solicitudes, incluyendo:"
 msgstr[1] "Los ciudadanos de {{site_name}} han hecho {{number_of_requests}} solicitudes, incluyendo:"
 
+msgid "New response to your FOI request - {{request_title}}"
+msgstr "Nueva respuesta a tu solicitud de información - {{request_title}}"
+
+msgid "New response to your request"
+msgstr "Nueva respuesta a tu solicitud"
+
+msgid "You have a new response to the {{law_used_full}} request"
+msgstr "Tienes una nueva respuesta a tu solicitud de acceso a la información pública."
+
+msgid "You have a new response to the {{law_used_full}} request '{{request_title}}' that you made to {{public_body_name}}."
+msgstr "Tienes una nueva respuesta a tu solicitud de acceso a la información pública '{{request_title}}' que le hiciste a {{public_body_name}}."
+
+msgid "To view the response, click on the link below."
+msgstr "Para ver la respuesta, usa el siguiente enlace."
+
+msgid "When you get there, please update the status to say if the response contains any useful information."
+msgstr "Por favor actualiza el estado para indicar si la respuesta contiene información útil."
+
+msgid "Although all responses are automatically published, we depend on you, the original requester, to evaluate them."
+msgstr "Aunque todas las respuestas se publican automáticamente, dependemos de ti, el creador de la solicitud, para evaluarlas."
+
+msgid "The {{site_name}} team."
+msgstr "El equipo de {{site_name}}."
+
+msgid "To let everyone know, follow this link and then select the appropriate box."
+msgstr "Para que todo el mundo lo sepa, sigue este enlace y elige la opción adecuada."
+
+msgid "Your request was called {{info_request}}. Letting everyone know whether you got the information will help us keep tabs on"
+msgstr "Tu solicitud se llamaba {{info_request}}. Haznos saber si has recibido la información para ayudarnos a controlar a"
+
+msgid "<strong>By law, they have to respond</strong> (<a href=\"{{url}}\">why?</a>)."
+msgstr "<strong>Por ley, tienen que responder</strong> (<a href=\"{{url}}\">¿por qué?</a>)."
+
+msgid "Help Pages"
+msgstr "Páginas de ayuda"
+
+msgid "Introduction"
+msgstr "Introducción"
+
+msgid "Making requests"
+msgstr "Solicitar información"
+
+msgid "Your privacy"
+msgstr "Privacidad"
+
+msgid "FOI officers"
+msgstr "Información para las Municipalidades"
+
+msgid "About the software"
+msgstr "Sobre el software"
+
+msgid "Credits"
+msgstr "Créditos"
+
+msgid "Programmers API"
+msgstr "API"
+
+msgid "Advanced search"
+msgstr "Búsqueda avanzada"
+
