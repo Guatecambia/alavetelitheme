@@ -19,9 +19,6 @@
         <li>
           <%= link_to _('Privacy and cookies'), help_privacy_path %>
         </li>
-        <li>
-          <%= link_to _('API'), help_api_path %>
-        </li>
         <% if feature_enabled?(:pro_pricing) %>
         <li>
           <%= link_to _('{{pro_site_name}} Terms',

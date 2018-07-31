@@ -298,3 +298,15 @@ msgstr "Para que todo el mundo lo sepa, sigue este enlace y elige la opción ade
 msgid "Your request was called {{info_request}}. Letting everyone know whether you got the information will help us keep tabs on"
 msgstr "Tu solicitud se llamaba {{info_request}}. Actualizar el estado nos sirve a todos para saber si se esta cumpliendo con la ley"
 
+msgid "FOI officer questions"
+msgstr "Información para las municipalidades"
+
+msgid "Other requests"
+msgstr "Otras solicitudes"
+
+msgid "Personal Information"
+msgstr "Información personal"
+
+msgid "How to ask for information?"
+msgstr "¿Cómo pedir información?"
+
