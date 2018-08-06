@@ -41,7 +41,6 @@
   <% @title = _("Make an {{law_used_short}} request to '{{public_body_name}}'",:law_used_short=>h(@info_request.law_used_human(:short)),:public_body_name=>h(@info_request.public_body.name))  %>
 <% end %>
 
-
 <%= form_for(@info_request, :url => (@batch ? new_batch_path : new_request_path),
                             :html => { :id => 'write_form' }  ) do |f| %>
   <div id="request_header" class="request_header">
@@ -259,3 +258,54 @@
     <%= javascript_include_tag 'new-request.js' %>
   <% end %>
 <% end %>
+
+<a id="inline" href="#data">This shows content of element who has id="data"</a>
+
+<div style="display:none"><div id="data">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div>
+
+<% content_for :javascript do %>
+    <script src="/assets/jquery.modal.min.js"></script>
+    <link rel="stylesheet" media="print" href="/assets/jquery.modal.css" />
+    <script>
+        modal({
+            type: 'inverted', //Type of Modal Box (alert | confirm | prompt | success | warning | error | info | inverted | primary)
+            title: 'Información', //Modal Title
+            text: '<p>Previo a llenar el  formulario eléctronico para presentar tu solicitud de información pública se sugiere considerar los siguientes aspectos: </p> <ol><li>FORMULARIO:  El formulario electrónico incluye campos obligatorios, así  como datos opcionales que son útiles para fines estadísticos</li><li>INFORMACIÓN CLARA Y PRECISA:  A efecto de ofrecer un mejor servicio , se recomienda identificar de forma clara y precisa la información solicitada. Si tienes referencia o conocimiento de la Direción, Unidad  o Sección  de la Municpalidad donde se encuentta la información requerida , puedes expresarla en tu solicitud. </li><li>DATOS PERSONALES: En materia de datos personales contenidos en los archivos o sistemas  de información de la Municipalidad, debe recordarse que sólo los titulares de la información o sus representantes legales pueden solicitar acceso a los mismos (para enterga, modificación correción o supresión ), previa acreditación legal. </li><li>GRATUIDAD Y COSTOS DE REPRODUCCIÓN: El acceso a la información pública en la Municipalidad  es gratuito y , solo cuando aplique, se cobrarán los gastos de reproducción de la información solicitada, en los términos previstos en la Ley de Acceso a la Información Pública.</li><li>PLAZO PARA LA RESPUESTA: El plazo máximo para emitir la respuesta a las solicitudes de información pública es de 10 días hábiles, que comienzan a partir del día (hábil) siguiente de ser presentada y admitida, salvo que sea notificada la prórroga , cuando el volumen y la extensión de la respuesta lo justifiquen.</li></ol>', //Modal HTML Content
+            size: 'normal', //Modal Size (normal | large | small)
+            buttons: [{
+                text: 'Aceptar', //Button Text
+                val: 'aceptar', //Button Value
+                eKey: true, //Enter Keypress
+                addClass: 'btn-light-blue', //Button Classes (btn-large | btn-small | btn-green | btn-light-green | btn-purple | btn-orange | btn-pink | btn-turquoise | btn-blue | btn-light-blue | btn-light-red | btn-red | btn-yellow | btn-white | btn-black | btn-rounded | btn-circle | btn-square | btn-disabled)
+                onClick: function(dialog) {
+                    return true;
+                }
+            }, ],
+            center: true, //Center Modal Box?
+            autoclose: false, //Auto Close Modal Box?
+            callback: null, //Callback Function after close Modal (ex: function(result){alert(result); return true;})
+            onShow: function(r) {}, //After show Modal function
+            closeClick: true, //Close Modal on click near the box
+            closable: true, //If Modal is closable
+            theme: 'reseted', //Modal Custom Theme (xenon | atlant | reseted)
+            animate: false, //Slide animation
+            background: 'rgba(0,0,0,0.35)', //Background Color, it can be null
+            zIndex: 1050, //z-index
+            buttonText: {
+                ok: 'OK',
+                yes: 'Yes',
+                cancel: 'Cancel'
+            },
+            template: '<div class="modal-box"><div class="modal-inner"><div class="modal-title"><a class="modal-close-btn"></a></div><div class="modal-text"></div><div class="modal-pdh"><img class="modal-pdh-img" src="/assets/pdh.png" /></div><div class="modal-buttons"></div></div></div>',
+            _classes: {
+                box: '.modal-box',
+                boxInner: ".modal-inner",
+                title: '.modal-title',
+                content: '.modal-text',
+                buttons: '.modal-buttons',
+                closebtn: '.modal-close-btn'
+            }
+        });
+    </script>
+<% end %>
+
