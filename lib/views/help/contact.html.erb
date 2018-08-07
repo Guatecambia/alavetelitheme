@@ -1,4 +1,4 @@
-<% @title = "Contact us" %>
+<% @title = _("Contact us") %>
 
 <%= foi_error_messages_for :contact %>
 
@@ -6,62 +6,35 @@
 
 <div id="contact_preamble" class="contact_preamble">
 
-  <% if !flash[:notice] %>
-    <h2>Contact an authority to get official information</h2>
-    <ul>
-      <li><a href="<%= new_request_path %>">Go here</a> to make a request, in public, for information
-        from public authorities.</li>
+    <ol>
+        <li>¿Tienes dudas sobre Publitopia? Te contamos que tenemos una sección de ayuda sobre las preguntas que te puedan surgir sobre esta página.</li>
+        <li>Si tienes otra duda que no está escrita aquí, puedes escribirnos a info@munisabiertas.org o bien, llenar el formulario que aquí se te presenta.</li>
+        <li>Si quieres contactarnos porque has encontrado información personal. Por favor lee nuestra área de <a href="/help/privacy">privacidad</a>  y si necesitas algo más escríbenos al correo info@munisabiertas.org o también puedes llenar el formulario que aquí se te presenta.</li>
+    </ol>
 
-      <li>
-        Asking for private information about yourself?
-        Please read our
-        <a href="<%= help_requesting_path(:anchor => 'data_protection') %>">help page</a>.
-      </li>
-    </ul>
-
-  <% end %>
-
-  <h2>Contact the <%= site_name %> team</h2>
-  <% if !flash[:notice] %>
-    <ul>
-      <li>
-        Please read the  <a href="<%= help_about_path %>">help page</a> first, as it may
-        answer your question quicker.
-      </li>
-
-      <li>We'd love to hear how you've found using this site.
-        Either fill in this form, or send an email to <a
-                            href="mailto:<%=@contact_email%>"><%=@contact_email%></a>
-      </li>
-
-      <li>We are a <strong>charity</strong> and not part of the
-        Government.</li>
-    </ul>
-  <% end %>
 </div>
-
 <%= form_for :contact do |f| %>
 
   <% if not @user %>
     <p>
-      <label class="form_label" for="contact_name">Your name:</label>
+      <label class="form_label" for="contact_name">Nombre:</label>
       <%= f.text_field :name, :size => 20 %>
-      (or <%= link_to "sign in", signin_path(:r => request.fullpath) %>)
+      (o <%= link_to "Ingresa aquí", signin_path(:r => request.fullpath) %>)
     </p>
 
     <p>
-      <label class="form_label" for="contact_email">Your email:</label>
+      <label class="form_label" for="contact_email">Correo:</label>
       <%= f.text_field :email, :size => 20 %>
     </p>
   <% end %>
 
   <p>
-    <label class="form_label" for="contact_subject">Subject:</label>
+    <label class="form_label" for="contact_subject">Asunto:</label>
     <%= f.text_field :subject, :size => 50 %>
   </p>
 
   <p>
-    <label class="form_label" for="contact_message">Message to website:</label>
+    <label class="form_label" for="contact_message">Mensaje para Publitopia:</label>
     <%= f.text_area :message, :rows => 10, :cols => 60 %>
   </p>
 
@@ -70,31 +43,14 @@
     <%= f.text_field :comment %>
   </p>
 
-  <% if !@last_request.nil? %>
-    <p>
-      <label class="form_label" for="contact_message">Include link to request:</label>
-      <%=request_link(@last_request) %>
-      <%= submit_tag "remove", :name => 'remove' %>
-    </p>
-  <% end %>
-  <% if !@last_body.nil? %>
-    <p>
-      <label class="form_label" for="contact_message">Include link to authority:</label>
-      <%=public_body_link(@last_body) %>
-      <%= submit_tag "remove", :name => 'remove' %>
-    </p>
-  <% end %>
-
   <p class="form_note">
-    We can only help you with <strong>technical problems</strong>, or questions
-    about Freedom of Information.
+    El equipo de Publitopia está muy feliz de que te comuniques con nosotros, estamos para ayudarte en lo que podamos.
   </p>
 
 
   <div class="form_button">
     <%= hidden_field_tag(:submitted_contact_form, 1) %>
-    <%= submit_tag "Send message to the charity", :data => { :disable_with => "Sending..." } %>
-    &lt;-- we run this site, not the Government!
+    <%= submit_tag "Mandar mensaje", :data => { :disable_with => "Enviando..." } %>
   </div>
 
 <% end %>

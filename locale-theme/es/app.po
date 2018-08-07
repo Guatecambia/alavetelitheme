@@ -17,7 +17,7 @@ msgid "Browse all authorities &rarr;"
 msgstr "Ver todas las Munis &rarr;"
 
 msgid "By law, you should get a response promptly, and normally before the end of <strong>{{date_response_required_by}}</strong>."
-msgstr "Por ley deberías de tener una respuesta, normalmente no más tarde de <strong>{{date_response_required_by}}</strong>."
+msgstr "Por ley deberías de tener una respuesta, normalmente no más tarde del <strong>{{date_response_required_by}}</strong>."
 
 msgid "Click on the link below to send a message to {{public_body_name}} telling them to reply to your request. You might like to ask for an internal review, asking them to find out why response to the request has been so slow."
 msgstr "Presiona el link debajo para enviar un mensaje a {{public_body_name}} diciendoles que respondan tu solicitud. Podrías pedir un proceso de revisión o preguntar por qué se han tardado tanto."
@@ -310,3 +310,31 @@ msgstr "Información personal"
 msgid "How to ask for information?"
 msgstr "¿Cómo pedir información?"
 
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Unhappy about a Freedom of Information request?"
+msgstr "¡No quede satisfecho con la respuesta que recibí!"
+
+msgid "Unhappy about the response you got?"
+msgstr "¡No quede satisfecho con la respuesta que recibí!"
+
+msgid "About our API"
+msgstr "Información del API"
+
+msgid "{{reason}}, create an account or sign in"
+msgstr "{{reason}}, necesitamos que crees o ingreses a tu cuenta. Esto permitirá que podamos avisarte directamente a tu correo cuando haya alguna respuesta por parte de las municipalidades, pero no te preocupes, tu correo no será público a menos que tú lo incluyas en la solicitud."
+
+msgid "Thank you! Hopefully your wait isn't too long."
+msgstr "¡Gracias! Esperamos obtengas tu información pronto."
+
+msgid "Check that..."
+msgstr "Toma en cuenta..."
+
+msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
+msgstr ""
+"<strong>Tu nombre aparecerá públicamente</strong> \n"
+"        (<a href=\"{{why_url}}\">¿por qué?</a>)\n"
+"        en esta web y en buscadores. Si estás\n"
+"       pensando en utilizar un seudónimo, por favor \n"
+"        <a href=\"{{help_url}}\">lee esto primero</a>."

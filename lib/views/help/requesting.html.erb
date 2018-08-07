@@ -1,33 +1,33 @@
-<% @title = "Making requests" %>
+<% @title = _("Making requests") %>
 
 <%= render :partial => 'sidebar' %>
 <div id="left_column_flip" class="left_column_flip">
-  <h1 id="making_requests"><%= @title %> <a href="#making_requests">#</a></h1>
+  <h1 id="making_requests"><%= @title %> </h1>
   <dl>
 
-    <dt id="what_info">¿Qué información puedo solicitar en Publitopia? <a href="#what_info">#</a></dt>
+    <dt id="what_info">¿Qué información puedo solicitar en Publitopia? </dt>
     <dd>
-        <p>Puedes solicitar documentos, archivos o todo tipo de información que manejen las Municipalidades y que no cuenten con restricciones. Conoce las restricciones que hay visitando nuestra área de "InfoRuta".</p>
+        <p>Puedes solicitar documentos, archivos o todo tipo de información que manejen las Municipalidades y que no cuenten con restricciones. Conoce las restricciones que hay visitando nuestra área de "<a href="http://inforuta.munisabiertas.org">InfoRuta</a>".</p>
     </dd>
     
-    <dt id="why_ask">¿Por qué debería solicitar información? <a href="#why_ask">#</a></dt>
+    <dt id="why_ask">¿Por qué debería solicitar información? </dt>
     <dd>
         <p>La información pública te incumbe como ciudadanos. Los funcionarios trabajan con tus impuestos, y toman decisiones que afectan tu vida, desde el cuidado de la salud hasta el ordenamiento territorial. </p>
         <p>Entre más sepas de cómo funciona la Muni, más y mejores sugerencias puedes hacer para mejorar las cosas en tu comunidad. </p>
     </dd>
 
-    <dt id="focused">¿Cómo hacer una buena solicitud? <a href="#focused">#</a> </dt>
+    <dt id="focused">¿Cómo hacer una buena solicitud? </dt>
     <dd>
       <p>Antes que nada, debes saber bien qué deseas pedir. Luego entre más claro y corto hagas el mensaje, más fácil es que los funcionarios identifiquen que información es la que estas solicitando, lo que significa que tendrás una respuesta más rápida.</p>
     </dd>
 
-    <dt id="fees">¿Hay que pagar por solicitar información?<a href="#fees">#</a> </dt>
+    <dt id="fees">¿Hay que pagar por solicitar información? </dt>
     <dd>
       <p>¡No! Solicitar información es GRATIS.</p>
       <p>Aunque debes tomar en cuenta que si la pides impresa pueden cobrarte la impresión, aunque si la solicitas electrónica no tienen por qué cobrarte.</p>
     </dd>
 
-    <dt id="quickly_response">¿Cuánto es el tiempo de respuesta? <a href="#quickly_response">#</a> </dt>
+    <dt id="quickly_response">¿Cuánto es el tiempo de respuesta? </dt>
     <dd>
       <p>Según la ley las instituciones tienen 10 días hábiles para contestarte.  Aunque pueden pedir una prórroga de 10 días más, por si no encuentran la información, que puede ser únicamente solicitada hasta el 8vo día de tu solicitud.</p>
       <p>Si te preocupa que se te pasen los tiempos ¡No te angusties! Para eso estamos.</p>
@@ -39,12 +39,12 @@
       </ul>
     </dd>
 
-    <dt id="no_response">¿Qué pasa si no recibo una respuesta? <a href="#no_response">#</a> </dt>
+    <dt id="no_response">¿Qué pasa si no recibo una respuesta? </dt>
     <dd>
-      <p>Si no recibes una respuesta, puedes llamar a la institución para saber que sucedió sino puedes ingresar al área de “InfoRuta”  donde te explicamos los pasos que puedes seguir.</p>
+      <p>Si no recibes una respuesta, puedes llamar a la institución para saber que sucedió sino puedes ingresar al área de "<a href="http://inforuta.munisabiertas.org">InfoRuta</a>"  donde te explicamos los pasos que puedes seguir.</p>
     </dd>
     
-    <dt id="denied">¿Cuáles son las causas por las que pueden denegarme la información que he solicitado? <a href="#denied">#</a></dt>
+    <dt id="denied">¿Cuáles son las causas por las que pueden denegarme la información que he solicitado? </dt>
     <dd>
         <p>Algunas de las causas pueden ser que:</p>
         <ul>
@@ -56,12 +56,12 @@
         </ul>
     </dd>
 
-    <dt id="offsite">He realizado solicitudes por otros medios y  he conseguido respuesta, ¿puedo subirlas o compartirlas en este sitio?<a href="#offsite">#</a> </dt>
+    <dt id="offsite">He realizado solicitudes por otros medios y  he conseguido respuesta, ¿puedo subirlas o compartirlas en este sitio? </dt>
     <dd>
         <p>Lamentamos decirte que no es posible. Publitopia archiva únicamente solicitudes realizadas desde este sitio. Si deseas hacer pública una respuesta, tienes que volver a hacer la solicitud a través de Publitopia. </p>
     </dd>
 
-    <dt id="requests_comments">Nuestra política para solicitudes y comentarios <a href="#requests_comments">#</a></dt>
+    <dt id="requests_comments">Nuestra política para solicitudes y comentarios </dt>
     <dd>
         <p>Estamos muy felices, y motivamos a todo el mundo a hacer su solicitud, poner comentarios o preguntas. </p>
         <p>Nuestro equipo estará pendiente de los contenidos que publiques, por lo que nos reservamos el derecho de eliminar los que sean poco apropiados, tengan un mensaje ofensivo o difamen en algún punto. </p>
@@ -75,176 +75,82 @@
     </dd>
     
     
-    <dt id="not_satifised">What if I'm not satisfied with the response? <a href="#not_satifised">#</a> </dt>
-    <dd>If you didn't get the information you asked for, or you didn't get it in time,
-      then read our page '<a href="<%= help_general_path(:action => 'unhappy') %>">Unhappy about the response you got?</a>'.
+    <dt id="not_satifised">¿Qué pasa si no quedo satisfecho con la respuesta? </dt>
+    <dd>
+        <p>Si la respuesta que recibiste no es la que esperabas, puedes ingresar a </p>
+        <ol>
+            <li>Nuesetra área de <a href="<%= help_general_path(:action => 'unhappy') %>">No quede satisfecho con la respuesta que recibí</a>.</li>
+            <li>Nuestra herramienta de Inforuta donde te explicamos el proceso de qué hacer en estos casos.</li>
     </dd>
 
-    <dt id="reuse">It says I can't re-use the information I got!<a href="#reuse">#</a> </dt>
+    <dt id="reuse">¿Puedo re utilizar la información que reciba o encuentre en Publitopia? </dt>
     <dd>
-      <p>Authorities often add legal boilerplate about the
-        "<a href="http://www.opsi.gov.uk/si/si2005/20051515">Re-Use of Public Sector
-          Information Regulations 2005</a>", which at first glance implies you may not
-        be able do anything with the information.
-      </p>
-
-      <p>You can, of course, write articles about the information or summarise it, or
-        quote parts of it. We also think you should feel free to republish the
-        information in full, just as we do, even though in theory you might not be
-        allowed to do so.  See <a href="<%= help_officers_path(:anchor => 'copyright') %>">our policy on copyright</a>.</p>
-
+      <p>¡Claro! La información es pública y está para que la utilicemos de forma responsable. </p>
     </dd>
 
-    <dt id="which_authority">I'm not sure which authority to make my request to, how can I find out? <a href="#which_authority">#</a> </dt>
+    <dt id="which_authority">¿Cómo puedo saber si la institución a la que pienso hacerle la solicitud de información pública es la correcta?  </dt>
     <dd>
-      <p>It can be hard to untangle government's complicated structure, and work out
-        who holds the information that you want. Here are a few tips:
-      </p>
+      <p>Puede ser difícil identificar qué institución es la que posee la información que deseas, aunque te dejamos algunos consejos:</p>
       <ul>
-        <li>Browse or search <%= site_name %> looking for similar requests to yours.</li>
-        <li>When you've found an authority you think might have the information, use
-          the "home page" link on the right hand side of their page to check what they do
-          on their website.</li>
-        <li>Contact the authority by phone or email to ask if they hold the kind of
-          information you're after.</li>
-        <li>Don't worry excessively about getting the right authority. If you get it
-          wrong, they ought to advise you who to make the request to instead.
-        </li>
-        <li>If you've got a thorny case, please <a href="<%= help_contact_path %>">contact us</a> for help.</li>
+        <li>Puedes contactar a la institución por teléfono para preguntarle si ellos son los que manejan la información que buscas.</li>
+        <li>Si es a municipalidades, puedes buscar en Publitopia, solicitudes similares. </li>
+        <li>Puedes visitar la página web de las municipalidades y explorar si tocan esa temática en su página.</li>
       </ul>
-
     </dd>
 
-
-
-    <dt id="missing_body">You're missing the public authority that I want to request from! <a href="#missing_body">#</a> </dt>
-
+    <dt id="missing_body">Publitopia no tienen a la institución pública a la que quiero solicitar información pública </dt>
     <dd>
-      <p>Please <a href="<%= new_change_request_path %>">contact us</a> with the name of the public authority and,
-        if you can find it, their contact email address for Freedom of Information requests.
-      </p>
-      <p>If you'd like to help add a whole category of public authority to the site, we'd love
-        to hear from you too.
-      </p>
-
+      <p>Por el momento Publitopia solo tiene el contacto con municipalidades, por lo que si deseas hacerle una solicitud a otra institución tendrá que ser directamente con ellas. </p>
     </dd>
 
-    <dt id="authorities">Why do you include some authorities that aren't formally subject to FOI?<a href="#authorities">#</a> </dt>
-
+    <dt id="authorities">¿Por qué Publitopia incluye algunas instituciones que no están sujetas a la ley de acceso a la información pública?  </dt>
     <dd>
-      <p><%= site_name %> lets you make requests for information to a range of
-        organisations:</p>
-
-      <ul>
-        <li> Those formally subject to the FOI Act</li>
-        <li> Those formally subject to the Environmental Regulations (a less well
-          defined group)</li>
-        <li> Those which voluntarily comply with the FOI Act</li>
-        <li> Those which aren't subject to the Act but we think should be, on grounds
-          such as them having significant public responsibilities.
-        </li>
-      </ul>
-
-      <p>In the last case, we're using the site to lobby for expansion of the
-        scope of the FOI Act. Even if an organisation is not legally obliged to respond
-        to an FOI request, they can still do so voluntarily.
-      </p>
-
+      <p>Te comentamos que Publitopia solo hace solicitudes a municipalidades, si deseas conocer sobre ese tipo de instituciones debes dirigirte directamente con ellas. </p>
     </dd>
     
-    <dt id="ico_help">Can you tell me more of the nitty gritty about the process of making requests? <a href="#ico_help">#</a> </dt>
-
+    <dt id="ico_help">¿Pueden decirme más acerca del proceso cómo hacer solicitudes? </dt>
     <dd>
-      <p>Have a look at the
-        <a href="http://www.ico.gov.uk/for_the_public/access_to_official_information.aspx">access to official information</a>
-        pages on the Information Commissioner's website.</p>
-
-      <p>If you're requesting information from a Scottish public authority,
-        the process is very similar. There are differences around time
-        limits for compliance.
-        See the <a href="http://www.itspublicknowledge.info/nmsruntime/saveasdialog.asp?lID=1858&amp;sID=321">Scottish
-          Information Commissioner's guidance</a> for details.</p>
+      <p>Para saber más sobre el proceso puedes ingresar a <a href="inforuta.munisabiertas.org">Inforuta</a>, donde te explicamos y te guiamos a través del proceso para hacer una solicitud de información pública.</p>
     </dd>
 
-    <dt id="data_protection">Can I request information about myself? <a href="#data_protection">#</a> </dt>
-
+    <dt id="data_protection">¿Puedo hacer una solicitud sobre mí? </dt>
     <dd>
-      <p>No. Requests made using <%= site_name %> are public, made under the Freedom of
-        Information Act, and cannot help you find information about a private
-        individual.</p>
-
-      <p>If you would like to know what information a public
-        authority holds about yourself, you should make a "Subject Access Request" in
-        private using Data Protection law.  The leaflet "<a
-        href="http://www.ico.gov.uk/upload/documents/library/data_protection/introductory/subject_access_rights.pdf">How to access your information</a>" (on the Information Commissioner's
-        website) explains how to do this.</p>
-
-      <p>If you see that somebody has included personal information, perhaps
-        unwittingly, in a request, please <a href="<%= help_contact_path %>">contact us</a>
-        immediately so we can remove it.</p>
+        <p>En Publitopia creemos en la protección de datos personales, por lo que no puedes hacer una solicitud sobre ti, al ser información privada. Únicamente puedes hacer solicitudes bajo la Ley de Acceso a la Información Pública.</p>
+        <p>Si deseas hacer este tipo de solicitudes debes comunicarte directamente con tu municipalidad. </p>
+        <p>Igualmente si vez que alguien incluye en su solicitud información personal, <a href="<%= help_contact_path %>">contáctanos</a> y nosotros nos haremos cargo.</p>
     </dd>
 
 
-    <dt id="private_requests">I'd like to keep my request secret! (At least until I publish my story) <a href="#private_requests">#</a> </dt>
-
-    <dd><p><%= site_name %> is currently only designed for public requests. All
-        responses that we receive are automatically published on the website for anyone
-        to read.  </p>
-      <p>You should contact the public authority directly if you would like to
-        make a request in private.  If you're interested in buying a system which helps
-        you manage FOI requests in secret, then <a href="<%= help_contact_path %>">contact us</a>.
-      </p>
-    </dd>
-
-    <dt id="eir">Why can I only request information about the environment from some authorities? <a href="#eir">#</a> </dt>
-
+    <dt id="private_requests">Quisiera mantener mi solicitud en secreto hasta que yo la quiera publicar </dt>
     <dd>
-      <p>Some public authorities, such as <a href="https://www.whatdotheyknow.com/body/south_east_water">South East Water</a>,
-        don't come under the Freedom of Information Act, but do come under another law called
-        the Environmental Information Regulations (EIR).
-      </p>
-
-      <p>It's a very similar law, so you make a request
-        to them using <%= site_name %> in just the same way as an FOI request. The only
-        difference is that on the page where you write your request, it reminds you
-        that you can only request "environmental information" and tells you what that
-        means. It is quite broad.
-      </p>
-
-      <p>You can, of course, request environmental information from other
-        authorities. Just make a Freedom of Information (FOI) request as normal. The
-        authority has a duty to work out if the Environmental Information Regulations
-        (EIR) is the more appropriate legislation to reply under.
-      </p>
+        <p>Te comentamos que en Publitopia las solicitudes se publican inmediatamente al realizarlas. Por lo que no se puede mantener la solicitud en secreto.</p>
+        <p>Si deseas mantener tu solicitud en secreto, deberías contactar a las instituciones directamente para hacer tu solicitud en privado.</p>
     </dd>
 
-    <dt id="multiple">Can I make the same to request to lots of authorities, e.g. all councils? <a href="#multiple">#</a> </dt>
+    <dt id="eir">¿Puedo solicitar información sobre medio ambiente? </dt>
+    <dd>
+      <p>Si la municipalidad está encargada de manejar esta información puedes solicitarla. De lo contrario debes buscar instituciones como el <a href="www.marn.gob.gt">Ministerio de Ambiente y Recursos Naturales</a> que son los encargados de manejar los temas ambientales.</p>
+    </dd>
 
-    <dd>We ask you to first send a test version of your request to a few
-      authorities. Their responses will help you improve the wording of your request,
-      so that you get the best information when you send the request to all of
-      the authorities. There is currently no automated system for sending the request
-      to the other authorities, you must copy and paste it by hand.
-
+    <dt id="multiple">¿Puedo hacer la misma solicitud a varias municipalidades? </dt>
+    <dd>
+        <p>¡Si! Aunque te recomendamos que la hagas primero a una municipalidad, para que su respuesta te ayude a mejorar tu solicitud y obtengas de mejor la información que deseas. </p>
+        <p>Y toma en cuenta que para hacerla a varias instituciones, en Publitopia debes copiar y pegar el mensaje, ya que no contamos con un sistema automático para enviar solicitudes a varias municipalidades.</p>
     </dd>
 
 
     <% if AlaveteliConfiguration::enable_annotations %>
-      <dt id="moderation">How do you moderate request annotations? <a href="#moderation">#</a> </dt>
+      <dt id="moderation">¿Cómo manejan o regulan los comentarios? </dt>
 
       <dd>
-        <p>Annotations on <%= site_name %> are to help
-          people get the information they want, or to give them pointers to places they
-          can go to help them act on it. We reserve the right to remove anything else.
-        </p>
-        <p>Endless, political discussions are not allowed.
-          Post a link to a suitable forum or campaign site elsewhere.</p>
+        <p>Nos encanta que te expreses y ayudes a que Publitopia sea un lugar ameno, donde puedas formar comunidad y te sientas en la libertad de dar sugerencias o ayudar a otros usuarios.</p>
+        <p>Aunque en casos donde los comentarios contengan mensajes ofensivos o información personal se hará una revisión para ver si este es retirado o no. Recuerda que nos reservamos el derecho de eliminar cualquier comentario que vaya en contra de <a hfer="/help/requesting#requests_comments">nuestras políticas.</a></p>
       </dd>
     <% end %>
 
   </dl>
 
-  <p><strong>Next</strong>, read about <a href="<%= help_privacy_path %>">your privacy</a> --&gt;
+  <p><strong>Ahora</strong>, lee sobre <a href="<%= help_privacy_path %>">Privacidad</a> --&gt;
 
     <div id="hash_link_padding"></div>
 </div>

@@ -1,20 +1,20 @@
-<% @title = "FOI officer questions" %>
+<% @title = _("FOI officer questions") %>
 
 <%= render :partial => 'sidebar' %>
 
 <div id="left_column_flip" class="left_column_flip">
-  <h1 id="officers"><%= _(@title) %> <a href="#officers">#</a> </h1>
+  <h1 id="officers"><%= @title %></h1>
 
   <dl>
 
-    <dt id="top">He llegado a esta página a través de una solicitud de información. ¿De qué se trata?  <a href="#top">#</a> </dt>
+    <dt id="top">He llegado a esta página a través de una solicitud de información. ¿De qué se trata? </dt>
     <dd>
         <p>Publitopia es una página web gestionada por Guatecambia, pero fue creada y liberada por la organización británica MySociety. La hicimos para ayudar a la población a solicitar información pública a municipalidades y que las respuestas sean accesibles para el resto de los ciudadanos.</p>
         <p>La solicitud que ha recibido fue enviada por un ciudadano a través de Publitopia. Por lo que tendrá que responderla de la misma forma que una solicitud de información corriente. La única diferencia es que la respuesta será publicada en esta página.</p>
         <p>Si tiene alguna duda sobre privacidad o cualquier otro asunto, puede enviarnos un correo a info@guatecambia.org.gt y con gusto le contestaremos. Nos encantará recibir sus comentarios, ideas o sugerencias sobre la página. </p>
     </dd>
 
-    <dt id="responses">¿Por qué se publican las respuestas de las solicitudes de información?  <a href="#responses">#</a> </dt>
+    <dt id="responses">¿Por qué se publican las respuestas de las solicitudes de información? </dt>
     <dd>
         <p>Porque aportan muchos beneficios. </p>
         <ul>
@@ -24,19 +24,19 @@
         <p>Igualmente la información que le solicitaran es información pública, por lo que no supone ningun problema para ustedes.</p>
     </dd>
 
-    <dt id="realpeople">¿Las personas que realizan solicitudes son reales? <a href="#realpeople">#</a> </dt>
+    <dt id="realpeople">¿Las personas que realizan solicitudes son reales? </dt>
     <dd>
         <p>Por supuesto. Todas las solicitudes son hechas por ciudadanos que quieren saber información pública sobre su municipalidad. </p>
         <p>Pero para que el sistema funcione de manera automática, utilizamos direcciones de correo electrónico generadas por el ordenador para identificar la solicitud. Es por eso es que a la municipalidad le aparece una la dirección de correo electrónica de Publitopia.</p>
     </dd>
 
-    <dt id="vexatious">¡Publitopia me está enviando demasiadas solicitudes!  <a href="#vexatious">#</a> </dt>
+    <dt id="vexatious">¡Publitopia me está enviando demasiadas solicitudes! </dt>
     <dd>
         <p>Nosotros no realizamos ninguna solicitud. Las enviamos en nombre de los usuarios, que son personas reales, que quiere solicitar información. Si recibe muchas peticiones es una buena señal, ya que los ciudadanos están interesados en su institución o sus actividades ¡Felicidades!</p>
     </dd>
     
 
-    <dt id="spam_problems">¡Veo que se ha realizado una solicitud a mi municipalidad, pero no hemos recibido ningún email! <a href="#spam_problems">#</a> </dt>
+    <dt id="spam_problems">¡Veo que se ha realizado una solicitud a mi municipalidad, pero no hemos recibido ningún email! </dt>
     <dd>
         <p>Si esto pasa, puede que haya pasado una de estas dos cosas:</p>
         <ul>
@@ -45,101 +45,60 @@
         </ul>
     </dd>
 
-    <dt id="days">¿Cómo calculan la fecha límite que aparece en la página de peticiones? <a href="#days">#</a> </dt>
+    <dt id="days">¿Cómo calculan la fecha límite que aparece en la página de peticiones? </dt>
     <dd>
       <p>Se calculan los 10 días hábiles desde el envío de la solicitud, tal y como se especifica en la Ley de Acceso a la Información Pública.</p>
 
     </dd>
 
-    <dt id="answers">¿Cómo respondo a la solicitud? <a href="#answers">#</a></dt>
+    <dt id="answers">¿Cómo respondo a la solicitud?</dt>
     <dd>
         <p>Simplemente, responda el correo electrónico de manera normal. La solicitud se hará llegar al ciudadano y esta será pública en Publitopia.</p>
     </dd>
 
-    <dt id="large_file">¿Cómo puedo enviar un archivo grande que no puede ir por correo electrónico? <a href="#large_file">#</a> </dt>
+    <dt id="large_file">¿Cómo puedo enviar un archivo grande que no puede ir por correo electrónico?</dt>
     <dd><p>Puede contactarse con nosotros y le facilitaremos una dirección web para subir el archivo desde su navegador. </p>
     </dd>
 
-    <dt id="names">¿Por qué publican los nombres de los funcionarios y el texto de los mensajes? <a href="#names">#</a> </dt>
+    <dt id="names">¿Por qué publican los nombres de los funcionarios y el texto de los mensajes? </dt>
     <dd><p>Consideramos que el trabajo de los funcionarios debe ser público. Únicamente se eliminaran los mensajes que contenga información sensible o no estén de acuerdo con nuestra política.</p>
     </dd>
 
-    <dt id="mobiles">¿Publican las direcciones de correo electrónica  o los números de teléfono móvil? <a href="#mobiles">#</a> </dt>
+    <dt id="mobiles">¿Publican las direcciones de correo electrónica  o los números de teléfono móvil? </dt>
     <dd>
         <p>No publicamos información que sean datos personales, por lo que intentamos eliminar automáticamente todas las direcciones de correo y posibles números de teléfono que se incluyan en las solicitudes.</p>
     </dd>
     
-    
-    
-    <dt id="days2">But really, how do you calculate the deadline?<a href="#days2">#</a> </dt>
+    <dt id="days2">Pero enserio ¿Cómo calculan las fechas límites? </dt>
     <dd>
-
-      <p>Please read the answer to the previous question first. Legally, authorities
-        must respond <strong>promptly</strong> to FOI requests. If they fail to do that,
-        it is best if they show the hard work they are doing by explaining what is
-        taking the extra time to do.
-      </p>
-
-      <p>That said, <%= site_name %> does show the maximum legal deadline
-        for response on each request. Here's how we calculate it.</p>
-
+      <p>En Publitopia se calculan los tiempos según la ley y también se toman en cuenta las horas laborales por lo que sería así.</p>
       <ul>
-
-        <li>If the day we deliver the request by email is a working day, we count that
-          as "day zero", even if it was delivered late in the evening. Days end at
-          midnight.  We then count the next working day as "day one", and so on up to
-          <strong><%= AlaveteliConfiguration::reply_late_after_days %> working days</strong>.</li>
-
-        <li>If the day the request email was delivered was a non-working day, we count
-          the next working day as "day one". Delivery is delivery, even if it happened on
-          the weekend. Some authorities disagree with this, our lawyer disagrees with them. </li>
-
-        <li>Requesters are encouraged to mark when they have <strong>clarified</strong>
-          their request so the clock resets, but sometimes they get this wrong. If you
-          see a problem with a particular request, let us know and we'll fix it.</li>
+        <li>El primer día que se envía una solicitud se cuenta como el día cero, aunque el correo haya sido enviado ese día en la tarde. Los días terminan a la medianoche. Por lo que el primer día de la solicitud se contará hasta el siguiente día en horas laborales, y así será consecutivamente hasta el día 10. Los fines de semanas no se cuentan. </li>
+        <li>Si la solicitud es enviada en un día no laboral, este día no se tomará en cuenta. Publitopia empieza a contar hasta el siguiente día laboral. Aunque el envío si se hace ese día.</li>
       </ul>
-
-      <p>The date thus calculated is shown on requests with the text "By law,
-        Liverpool City Council should normally have responded by...".
-      </p>
-
+      <p>Si tienes más dudas puedes revisar las respuestas anteriores, donde también lo explicamos aunque también ten la confianza de <a href="<%= help_contact_path %>">contactarnos</a>, si tienes más dudas o si ves un problema con los tiempos. Así podemos explicarte con más detalles y resolver cualquier problema.</p>
     </dd>
 
 
-
-
-    <dt id="copyright"><a id="commercial"></a>What is your policy on copyright of documents?<a href="#copyright">#</a> </dt>
-
-    <dd>Our Freedom of Information law is "applicant blind", so anyone in the
-      world can request the same document and get a copy of it.
-
-      If you think our making a document available on the internet infringes your
-      copyright, you may <a href="<%= help_contact_path %>">contact us</a> and ask us
-      to take it down.  However, to save tax payers' money by preventing duplicate
-      requests, and for good public relations, we'd advise you not to do that.
+    <dt id="copyright"><a id="commercial"></a>¿Cuál es su política sobre derechos de autor? </dt>
+    <dd>
+        <p>Toda la información que se maneja en Publitopia es pública, aunque si la reutilizas te recomendamos citar a la institución que te la dio para darle su crédito y así más personas también puedan encontrarla.</p>
     </dd>
 
-    <dt id="allowed_responses">My response to an old request on <%= site_name %> has been bounced!<a href="#allowed_responses">#</a> </dt>
-      <dd>After six months of inactivity, <%= site_name %> limits who can respond to a request to stop
-      spammers targeting old requests. At that point, the request can only be responded to by someone who's
-      from the authority. After twelve months, the request is closed to responses from anyone. If you need an
-      old request to be re-opened so that you can respond to it, please <a href="<%= help_contact_path %>">
-      contact us</a>.
+    <dt id="allowed_responses">Respondí una solicitud vieja, pero esta me rebotó ¿Por qué pasó esto? </dt>
+      <dd>
+        <p>Después de 6 meses de inactividad, Publitopia limita quien puede responder a las solicitudes. Esto para evitar el spam. Aunque la solicitud solo puede ser respondida por el encargado del área de acceso a la información. </p>
+        <p>Pero después de 12 meses, la solicitud queda inactiva para respuestas de cualquier persona. Si necesitas que se vuelva a abrir una solicitud anterior puedes contactarnos.   </p>
       </dd>
-
-
   </dl>
 
-    <dt id="email_only">An email isn't a sufficient address for an FOI request! <a href="#email_only">#</a> </dt>
-    <dd>Yes it is. In the UK, this
-      <a href="https://www.whatdotheyknow.com/request/1142/response/2894/attach/5/20080806100741260.pdf">letter from the ICO to Rother District Council</a> gives guidance on the matter, specifically
-      in the context of requests made via WhatDoTheyKnow, a similar site to <%= site_name %>.
+    <dt id="email_only">¡Un correo no es suficiente para hacer una solicitud de información pública! </dt>
+    <dd>
+        <p>¡Claro que sí!, Según la ley de acceso a la información pública de nuestro país, el contacto debe ser directo con el área de acceso a la información pública que es el correo con el que te contactas.</p>
     </dd>
 
-
   
-  <p><strong>If you haven't already</strong>, read <a href="<%= help_about_path %>">the introduction</a> --&gt;
-    <br><strong>Otherwise</strong>, the <a href="<%= help_credits_path %>">credits</a> or the <a href="<%= help_api_path %>">programmers API</a> --&gt;
+  <p><strong>Recuerda que puedes leer </strong><a href="<%= help_about_path %>">las instrucciones</a> para conocer más sobre esta plataforma. --&gt;</p>
 
     <div id="hash_link_padding"></div>
 </div>
