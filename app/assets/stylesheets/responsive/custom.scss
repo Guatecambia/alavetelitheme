@@ -981,14 +981,16 @@ h1, h2 {
     }
     .final__social-links {
         padding-left:1rem;
-        width: 41.66%;
+        /*width: 41.66%;*/
         float:right; 
+        margin-top:95px;
     }
 }
 
 @media (min-width: 54em) {
     .footer__about {
         float:right;
+        margin-top:50px;
     }
     .footer_gc {
         float:left;
@@ -1521,3 +1523,8 @@ h1, h2 {
     text-align:center;
 }
 
+.inner_support{
+    display:inline-block;
+    width:45%;
+    margin-top:0px;
+}

@@ -5,6 +5,13 @@
             <div>Un proyecto de:</div>
             <a href="http://www.guatecambia.org.gt"><img src="/assets/guatecambia_logo_ng.png" alt="Guatecambia" /></a>
         </div>
+        <div>Con el apoyo de:</div>
+        <div class="inner_support">
+            <a href="http://www.dw.com/en/dw-akademie-in-guatemala/a-18556141"><img style="width:85%;margin-top:42px;" src="/assets/dw.png" alt="DW Akademie" /></a>
+        </div>
+        <div class="inner_support">
+            <a href="https://www.pdh.org.gt/"><img style="width:80%;" src="/assets/pdh_footer.png" alt="Procurador de los Derechos Humanos" /></a>
+        </div>
     </div>
     <div class="footer__about">
       <h2><%= site_name %></h2>
@@ -27,23 +34,21 @@
         </li>
         <% end %>
       </ul>
-    </div>
-  </div>
-  <div class="footer__final">
-    <div class="row">
-      <div class="final__social-links">
-        <ul>
-          <% unless AlaveteliConfiguration::twitter_username.blank? %>
-          <li>
-            <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>" class="social-link social-link--twitter" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::TWITTER_EXIT, :label => "Footer link")%>">@<%= AlaveteliConfiguration::twitter_username %></a>
-          </li>
-          <% end %>
-          <% unless AlaveteliConfiguration::facebook_username.blank? %>
-          <li>
-            <a href="https://facebook.com/<%= AlaveteliConfiguration::facebook_username %>" class="social-link social-link--facebook" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::FACEBOOK_EXIT, :label => "Footer link")%>">/<%= AlaveteliConfiguration::facebook_username %></a>
-          </li>
-          <% end %>
-        </ul>
+      <div class="footer__final">
+          <div class="final__social-links">
+            <ul>
+              <% unless AlaveteliConfiguration::twitter_username.blank? %>
+              <li>
+                <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>" class="social-link social-link--twitter" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::TWITTER_EXIT, :label => "Footer link")%>">@<%= AlaveteliConfiguration::twitter_username %></a>
+              </li>
+              <% end %>
+              <% unless AlaveteliConfiguration::facebook_username.blank? %>
+              <li>
+                <a href="https://facebook.com/<%= AlaveteliConfiguration::facebook_username %>" class="social-link social-link--facebook" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::FACEBOOK_EXIT, :label => "Footer link")%>">/<%= AlaveteliConfiguration::facebook_username %></a>
+              </li>
+              <% end %>
+            </ul>
+          </div>
       </div>
     </div>
   </div>
