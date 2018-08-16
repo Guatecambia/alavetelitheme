@@ -5,8 +5,8 @@ $base-font-size: 16px;
 
 // Specify the filename and dimensions of your logo file here
 $logo-filename: 'logo.png';
-$logo-gc: 'guatecambia_logo_ng.png'; 
-$logo-highdpi-filename: 'logo@2.png'; //Should be at least 2x the size, in the same proportions
+$logo-gc: '<%= asset_path "guatecambia_logo_ng.png" %>'; 
+$logo-highdpi-filename: 'logox2.png'; //Should be at least 2x the size, in the same proportions
 $logo-width: 150px;
 $logo-height: 80px;
 
