@@ -1,55 +1,58 @@
 <div class="footer" id="footer" role="contentinfo">
-  <div class="row">
-    <div class="footer_gc">
-        <div>
-            <div>Un proyecto de:</div>
+    <div class="row">
+        <div class="powered_by">
+            <a target="_blank" href="http://www.munisabiertas.org"><img src="<%= asset_path "munisabiertas.png" %>" alt="Munis Abiertas" /></a>
+            <div class="by_text">Un proyecto de:</div>
             <a target="_blank" href="http://www.guatecambia.org.gt"><img src="<%= asset_path "guatecambia_logo_ng.png" %>" alt="Guatecambia" /></a>
         </div>
-        <div>Con el apoyo de:</div>
-        <div class="inner_support">
-            <a target="_blank"  href="http://www.dw.com/en/dw-akademie-in-guatemala/a-18556141"><img style="width:85%;margin-top:42px;" src="<%= asset_path "dw.png" %>" alt="DW Akademie" /></a>
-        </div>
-        <div class="inner_support">
-            <a target="_blank" href="https://www.pdh.org.gt/"><img style="width:80%;" src="<%= asset_path "pdh_footer.png" %>" alt="Procurador de los Derechos Humanos" /></a>
-        </div>
     </div>
-    <div class="footer__about">
-      <h2><%= site_name %></h2>
-      <%= render :partial => 'general/responsive_credits' %>
-      <ul class="about__contact-links">
-        <li>
-          <%= link_to _('Contact us'), help_contact_path %>
-        </li>
-        <li>
-          <%= link_to _('Help'), help_path %>
-        </li>
-        <li>
-          <%= link_to _('Privacy and cookies'), help_privacy_path %>
-        </li>
-        <% if feature_enabled?(:pro_pricing) %>
-        <li>
-          <%= link_to _('{{pro_site_name}} Terms',
-                        pro_site_name: AlaveteliConfiguration.pro_site_name),
-                        pro_page_path(:id => 'legal') %>
-        </li>
-        <% end %>
-      </ul>
-      <div class="footer__final">
-          <div class="final__social-links">
-            <ul>
-              <% unless AlaveteliConfiguration::twitter_username.blank? %>
-              <li>
-                <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>" class="social-link social-link--twitter" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::TWITTER_EXIT, :label => "Footer link")%>">@<%= AlaveteliConfiguration::twitter_username %></a>
-              </li>
-              <% end %>
-              <% unless AlaveteliConfiguration::facebook_username.blank? %>
-              <li>
-                <a href="https://facebook.com/<%= AlaveteliConfiguration::facebook_username %>" class="social-link social-link--facebook" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::FACEBOOK_EXIT, :label => "Footer link")%>">/<%= AlaveteliConfiguration::facebook_username %></a>
-              </li>
-              <% end %>
-            </ul>
+    <div class="row">
+        <div class="footer_gc">
+            <div>Con el apoyo de:</div>
+            <div class="inner_support">
+                <a target="_blank"  href="http://www.dw.com/en/dw-akademie-in-guatemala/a-18556141"><img style="width:85%;margin-top:42px;" src="<%= asset_path "dw.png" %>" alt="DW Akademie" /></a>
+            </div>
+            <div class="inner_support">
+                <a target="_blank" href="https://www.pdh.org.gt/"><img style="width:80%;" src="<%= asset_path "pdh_footer.png" %>" alt="Procurador de los Derechos Humanos" /></a>
+            </div>
+        </div>
+        <div class="footer__about">
+          <h2><%= site_name %></h2>
+          <%= render :partial => 'general/responsive_credits' %>
+          <ul class="about__contact-links">
+            <li>
+              <%= link_to _('Contact us'), help_contact_path %>
+            </li>
+            <li>
+              <%= link_to _('Help'), help_path %>
+            </li>
+            <li>
+              <%= link_to _('Privacy and cookies'), help_privacy_path %>
+            </li>
+            <% if feature_enabled?(:pro_pricing) %>
+            <li>
+              <%= link_to _('{{pro_site_name}} Terms',
+                            pro_site_name: AlaveteliConfiguration.pro_site_name),
+                            pro_page_path(:id => 'legal') %>
+            </li>
+            <% end %>
+          </ul>
+          <div class="footer__final">
+              <div class="final__social-links">
+                <ul>
+                  <% unless AlaveteliConfiguration::twitter_username.blank? %>
+                  <li>
+                    <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>" class="social-link social-link--twitter" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::TWITTER_EXIT, :label => "Footer link")%>">@<%= AlaveteliConfiguration::twitter_username %></a>
+                  </li>
+                  <% end %>
+                  <% unless AlaveteliConfiguration::facebook_username.blank? %>
+                  <li>
+                    <a href="https://facebook.com/<%= AlaveteliConfiguration::facebook_username %>" class="social-link social-link--facebook" onclick="<%= track_analytics_event(AnalyticsEvent::Category::OUTBOUND, AnalyticsEvent::Action::FACEBOOK_EXIT, :label => "Footer link")%>">/<%= AlaveteliConfiguration::facebook_username %></a>
+                  </li>
+                  <% end %>
+                </ul>
+              </div>
           </div>
-      </div>
+        </div>
     </div>
-  </div>
 </div>

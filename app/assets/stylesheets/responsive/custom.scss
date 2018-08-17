@@ -19,7 +19,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: darken($color_primary, 15%);
+    background-color: #31007f;
     color: $color_white;
   }
 
@@ -29,11 +29,11 @@
 %selected-menu-item {
   font-weight: bold;
   color: $color_white;
-  background-color: darken($color_primary, 15%);
+  background-color: #31007f;
   &:hover,
   &:active,
   &:focus {
-    background-color: darken($color_primary, 15%);
+    background-color: #31007f;
     color: $color_white;
   }
 }
@@ -283,7 +283,7 @@ a.link_button_green_large {
   border-bottom: none;
   a {
     @extend %menu-item;
-    color: #2F017D;
+    color: #fff;
     @media( min-width: $main_menu-mobile_menu_cutoff ) {
       padding: 0.875em 1em;
     }
@@ -975,13 +975,35 @@ h1, h2 {
     color: #FF3F30;
 }
 
+.powered_by a img {
+    width:30%;
+    display:inline;
+}
+
+.by_text {
+    display:inline;
+    margin: 0 11% 0 11%;
+}
+
+@media (max-width : 580px){
+    .powered_by a img {
+        display:block;
+        margin: 0 auto;
+    }
+        
+    .by_text {
+        display:block;
+        text-align:center;
+        margin: 0;
+    }
+}
+
 @media (min-width: 32em){
     .final__social-links ul li {
         float: left;
     }
     .final__social-links {
         padding-left:1rem;
-        /*width: 41.66%;*/
         float:right; 
         margin-top:95px;
     }
@@ -1005,6 +1027,7 @@ h1, h2 {
     .homepage-hero {
         background-size:100% 100%;
     }
+    
 }
 
 .footer_gc div a img {
