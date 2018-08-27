@@ -986,6 +986,11 @@ h1, h2 {
     margin: 0 0 0 11%;
 }
 
+.supported_by {
+    margin-left: 60px;
+    margin-top: 65px;
+}
+
 @media (max-width : 580px){
     .powered_by a img {
         display:block;
@@ -1006,7 +1011,7 @@ h1, h2 {
     .final__social-links {
         padding-left:1rem;
         float:right; 
-        margin-top:95px;
+        margin-top:0px;
     }
 }
 
@@ -1018,9 +1023,6 @@ h1, h2 {
     .footer_gc {
         float:left;
         width:50%;
-    }
-    .footer_gc div {
-        margin-top:15px;
     }
     .footer_gc div a img {
         margin-top:15px;
