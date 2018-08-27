@@ -976,13 +976,14 @@ h1, h2 {
 }
 
 .powered_by a img {
-    width:30%;
+    width:20%;
     display:inline;
+    margin: 0 0 0 12%; 
 }
 
 .by_text {
     display:inline;
-    margin: 0 11% 0 11%;
+    margin: 0 0 0 11%;
 }
 
 @media (max-width : 580px){
