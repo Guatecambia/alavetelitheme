@@ -261,7 +261,8 @@
 
 
 <% content_for :javascript do %>
-    <script src="/assets/jquery.modal.min.js"></script>
+    <%= javascript_include_tag "jquery.modal.min.js" %>
+    <%= stylesheet_link_tag "jquery.Jcrop.min.css" %>
     <link rel="stylesheet" media="print" href="/assets/jquery.modal.css" />
     <script>
         modal({
