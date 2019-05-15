@@ -11,17 +11,11 @@
   <div class="message-preview">
     <div class="preview-advice sidebar">
       <div class="advice-panel">
-        <p><h2><%= _("Check that...") %></h2></p>
+        <p><h2><%= _("to write your request...") %></h2></p>
         <ul>
+          <li><%= _('Register first') %></li>
           <li><%= _('Check you haven\'t included any <strong>personal information</strong>.') %></li>
-          <li><%= raw(_("Your name, request and any responses will appear in " \
-                        "<strong>search engines</strong> " \
-                        "(<a href=\"{{url}}\">details</a>).",
-                        :url => help_privacy_path(:anchor => "public_request").html_safe)) %>
-          </li>
-          <li><%= _('<a href="{{url}}">Do you want to request private ' \
-                      'information about yourself?</a>',
-                    :url => help_requesting_path(:anchor => "data_protection").html_safe) %></li>
+          <li><%= raw(_("Your name, request and any responses will appear in <strong>search engines</strong> (<a href=\"{{url}}\">details</a>).", :url => help_privacy_path(:anchor => "public_request").html_safe)) %></li>
         </ul>
       </div>
     </div>
