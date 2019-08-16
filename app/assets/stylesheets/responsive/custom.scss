@@ -1573,3 +1573,38 @@ h1, h2 {
 }
 
 
+.chat-btn {
+  background-image: image-url('piaIcon.jpg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  right:10px;
+  bottom: 10px;
+}
+
+.chat-btn:hover {
+  background-color: white;
+  border: 5px solid #FF3F30;
+}
+
+#chat-layer {
+  position: fixed;
+  right:10px;
+  bottom: 10px;
+  z-index:100;
+}
+
+.chat-head {
+  height: 110px;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  margin: auto;
+  background-image: image-url('chatSquare.jpg');
+}
+

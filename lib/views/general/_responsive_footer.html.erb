@@ -56,6 +56,32 @@
                 </ul>
               </div>
           </div>
+          <button class="btn chat-btn" type="button" onclick="chatToggle()"></button>
+          <div id="chat-layer" style="display:none;">
+            <div class="chat-head" onclick="chatToggle()"></div>
+            <iframe
+                allow="microphone;"
+                width="350"
+                height="430"
+                src="https://console.dialogflow.com/api-client/demo/embedded/5a4f3128-afb0-4ed1-b04b-cdfc5957e203"
+                frameborder="0"
+                >
+            </iframe>
+          </div>
         </div>
     </div>
 </div>
+<script>
+
+  function chatToggle() {
+    console.log("chattoggle");
+    jQuery('#chat-layer').toggle(1000,'swing', function() {
+      if (jQuery('#chat-layer').is(':visible')) {
+        console.log("es visible");
+      }
+      else {
+        console.log("no es visible");
+      }
+    });
+  }
+</script>

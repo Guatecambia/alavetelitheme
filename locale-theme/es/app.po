@@ -221,8 +221,8 @@ msgstr "{{public_body_name}} no ha contestado a tu solicitud '{{title}}' en el t
 
 msgid "{{site_name}} covers requests to {{number_of_authorities}} authority, including:"
 msgid_plural "{{site_name}} covers requests to {{number_of_authorities}} authorities, including:"
-msgstr[0] "{{site_name}} te permite hacer solicitudes a {{number_of_authorities}} municipalidades, incluyendo: "
-msgstr[1] "{{site_name}} te permite hacer solicitudes a {{number_of_authorities}} municipalidades, incluyendo: "
+msgstr[0] "{{site_name}} te permite hacer solicitudes a {{number_of_authorities}} municipalidades y gobernaciones departamentales, incluyendo: "
+msgstr[1] "{{site_name}} te permite hacer solicitudes a {{number_of_authorities}} municipalidades y gobernaciones departamentales, incluyendo: "
 
 msgid "{{site_name}} users have made {{number_of_requests}} request, including:"
 msgid_plural "{{site_name}} users have made {{number_of_requests}} requests, including:"
